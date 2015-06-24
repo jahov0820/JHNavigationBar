@@ -16,33 +16,37 @@ class ViewController: UIViewController,UIScrollViewDelegate {
         super.viewDidLoad()
         
         
-        // T1:
+        // case1:
         var color = UIColor(red: 25/255, green: 144/255, blue: 211/255, alpha: 1)
         self.navigationController?.navigationBar.overlayColor = color
         
     }
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
-//         T1:
-        self.navigationController?.navigationBar.jh_reset()
+        
+        // case2:
+//        self.navigationController?.navigationBar.jh_heightReset()
+        
+        // case1:
+        self.navigationController?.navigationBar.jh_colorReset()
     }
+    
     override func viewWillAppear(animated: Bool) {
-//         T1:
+        //need
         self.scrollViewDidScroll(tableView)
     }
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
-//         T1:
+//         case1:
         JHNavBarHandle.handleJHNavigationBarColor(scrollView, uiviewcontoller: self)
         
         
-        //T2:
+        //case2:
 //        JHNavBarHandle.handleJHNavigationBarHeight(scrollView, uiviewcontoller: self)
         
     }
 
 }
-
 
 
 extension ViewController:UITableViewDelegate,UITableViewDataSource {

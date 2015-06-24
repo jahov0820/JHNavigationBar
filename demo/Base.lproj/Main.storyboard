@@ -23,7 +23,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="253"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="angleababy.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="seU-xt-CFn">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="angleababy.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="seU-xt-CFn">
                                             <rect key="frame" x="0.0" y="-80" width="600" height="333"/>
                                         </imageView>
                                     </subviews>
@@ -61,7 +61,9 @@
                             <constraint firstAttribute="trailing" secondItem="8G4-Yv-Xhs" secondAttribute="trailing" id="cTa-vT-hdg"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="VU0-Sk-jUr"/>
+                    <navigationItem key="navigationItem" id="VU0-Sk-jUr">
+                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="pHp-Ul-31D"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="8G4-Yv-Xhs" id="t7A-zh-5dE"/>
                     </connections>
@@ -96,6 +98,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="EMK-WI-xLd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.098039215686274508" green="0.56470588235294117" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
