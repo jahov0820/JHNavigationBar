@@ -15,7 +15,7 @@ extension UINavigationBar {
     private struct AssociatedKeys {
         static var overLay = "overLay"
         static var emptyImage = "emptyImage"
-        static var overlayColor = "barColor"
+        static var overlayColor = "overlayColor"
     }
     
     var overlay: UIView? {
@@ -33,7 +33,6 @@ extension UINavigationBar {
             }
         }
     }
-
     var overlayColor:UIColor?{
         get {
             return objc_getAssociatedObject(self, &AssociatedKeys.overlayColor) as?UIColor
@@ -49,7 +48,6 @@ extension UINavigationBar {
             }
         }
     }
-    
     var emptyImage: UIImage? {
         get {
             return objc_getAssociatedObject(self, &AssociatedKeys.emptyImage) as?UIImage
@@ -72,8 +70,6 @@ extension UINavigationBar {
         }else{
             self.setBackgroundImage(UIImage.new(), forBarMetrics: UIBarMetrics.Default)
             overlay = UIView(frame:CGRectMake(0, -20, UIScreen.mainScreen().bounds.size.width, CGRectGetHeight(self.bounds)+20))
-            overlay!.userInteractionEnabled = false
-            overlay!.autoresizingMask = UIViewAutoresizing.FlexibleHeight|UIViewAutoresizing.FlexibleWidth
             self.insertSubview(overlay!, atIndex: 0)
         }
         overlay!.backgroundColor = color
@@ -97,8 +93,6 @@ extension UINavigationBar {
         }else{
             if let barTint = self.barTintColor{
                 self.jh_setBackgroundColor(self.barTintColor!)
-            }else{
-                self.jh_setBackgroundColor(UIColor(red: 247/255, green: 247/255, blue: 247/255, alpha: 1))
             }
         }
     }
@@ -120,7 +114,6 @@ extension UINavigationBar {
     }
     func jh_heightReset(){
         self.jh_setTranslationY(0)
-
     }
     
 }
