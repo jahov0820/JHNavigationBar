@@ -1,6 +1,6 @@
 # JHNavigationBar
 
-##Screenshoot
+##Screenshot
 
 ![alt tag](https://github.com/Liaojiahao/JHNavigationBar/blob/master/screenshoot1.gif)
 ![alt tag](https://github.com/Liaojiahao/JHNavigationBar/blob/master/screenshoot2.gif)
