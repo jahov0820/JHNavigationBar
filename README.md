@@ -1,9 +1,9 @@
 # JHNavigationBar
 
 ##Screenshoot
+
 ![alt tag](https://github.com/Liaojiahao/JHNavigationBar/blob/master/screenshoot1.gif)
 ![alt tag](https://github.com/Liaojiahao/JHNavigationBar/blob/master/screenshoot2.gif)
-
 
 ##Usage
 
@@ -43,5 +43,6 @@
     }
 ```
 
-## Cocoapod
+## CocoaPods
+
 > pod 'JHNavigationBar', '~> 1.0.0'
