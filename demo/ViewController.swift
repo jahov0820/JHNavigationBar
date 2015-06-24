@@ -15,7 +15,7 @@ class ViewController: UIViewController,UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+
         // case1:
         var color = UIColor(red: 25/255, green: 144/255, blue: 211/255, alpha: 1)
         self.navigationController?.navigationBar.overlayColor = color

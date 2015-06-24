@@ -21,6 +21,7 @@ class JHNavBarHandle: NSObject {
     }
     
     class func handleJHNavigationBarHeight(scroll:UIScrollView,uiviewcontoller:UIViewController){
+        uiviewcontoller.automaticallyAdjustsScrollViewInsets = false
         var offsetY = scroll.contentOffset.y
         if offsetY > 0{
             if(offsetY >= 44){

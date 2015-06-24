@@ -113,13 +113,15 @@ extension UINavigationBar {
         }
     }
     
-    func jh_reset (){
+    func jh_colorReset(){
         self.shadowImage = nil
-        var color = UIColor(red: 25/255, green: 144/255, blue: 211/255, alpha: 1)
-        overlay!.backgroundColor = overlayColor!
+        overlay!.backgroundColor = self.overlayColor
         self.overlay = nil
     }
+    func jh_heightReset(){
+        self.jh_setTranslationY(0)
 
+    }
     
 }
 
