@@ -45,4 +45,4 @@
 
 ## CocoaPods
 
-> pod 'JHNavigationBar', '~> 1.0.0'
+> pod 'JHNavigationBar', '~> 1.1.0'
