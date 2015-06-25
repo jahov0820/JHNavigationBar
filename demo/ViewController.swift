@@ -28,7 +28,7 @@ class ViewController: UIViewController,UIScrollViewDelegate {
 //        self.navigationController?.navigationBar.jh_heightReset()
         
         // case1:
-        self.navigationController?.navigationBar.jh_colorReset()
+        self.navigationController?.navigationBar.jh_alphaReset()
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -38,7 +38,7 @@ class ViewController: UIViewController,UIScrollViewDelegate {
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
 //         case1:
-        JHNavBarHandle.handleJHNavigationBarColor(scrollView, uiviewcontoller: self)
+        JHNavBarHandle.handleJHNavigationBarAlpha(scrollView, uiviewcontoller: self)
         
         
         //case2:

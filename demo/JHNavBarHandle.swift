@@ -8,7 +8,7 @@
 import UIKit
 class JHNavBarHandle: NSObject {
     
-    class func handleJHNavigationBarColor(scroll:UIScrollView,uiviewcontoller:UIViewController){
+    class func handleJHNavigationBarAlpha(scroll:UIScrollView,uiviewcontoller:UIViewController){
         uiviewcontoller.automaticallyAdjustsScrollViewInsets = false
         var overlayColor = uiviewcontoller.navigationController?.navigationBar.overlayColor
         var offsetY = scroll.contentOffset.y

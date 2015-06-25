@@ -70,6 +70,7 @@ extension UINavigationBar {
         }else{
             self.setBackgroundImage(UIImage.new(), forBarMetrics: UIBarMetrics.Default)
             overlay = UIView(frame:CGRectMake(0, -20, UIScreen.mainScreen().bounds.size.width, CGRectGetHeight(self.bounds)+20))
+            overlay?.userInteractionEnabled = false
             self.insertSubview(overlay!, atIndex: 0)
         }
         overlay!.backgroundColor = color
@@ -107,7 +108,7 @@ extension UINavigationBar {
         }
     }
     
-    func jh_colorReset(){
+    func jh_alphaReset(){
         self.shadowImage = nil
         overlay!.backgroundColor = self.overlayColor
         self.overlay = nil
